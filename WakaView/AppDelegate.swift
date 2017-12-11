@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    window = UIWindow(frame: UIScreen.main.bounds)
+    
+    // Set the root view controller based on whether or not a user is logged in
+    // Auth flow if no token is found in UserDefaults, otherwise main storyboard
+    if UserDefaults.standard.value(forKey: "token") == nil {
+      window?.rootViewController = AuthenticationViewController(nibName: "AuthenticationViewController", bundle: nil)
+    }
+    else {
+      window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+    }
+    
+    window?.makeKeyAndVisible()
+    
     return true
   }
 
