@@ -7,6 +7,7 @@ target 'WakaView' do
 
   # Pods for WakaView
   pod 'Alamofire'
+  pod 'Charts'
   pod 'Moya'
 
 end
