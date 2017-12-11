@@ -9,5 +9,6 @@ target 'WakaView' do
   pod 'Alamofire'
   pod 'Charts'
   pod 'Moya'
+  pod 'OAuthSwift'
 
 end
