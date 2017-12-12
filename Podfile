@@ -10,5 +10,6 @@ target 'WakaView' do
   pod 'Charts'
   pod 'Moya'
   pod 'OAuthSwift'
+  pod 'SwiftyJSON'
 
 end
