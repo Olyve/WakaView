@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthenticationViewController" customModule="WakaView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to WakaView!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-lz-PXm">
+                    <rect key="frame" x="0.0" y="20" width="375" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="noo-bS-fQt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button below to log in to your WakaTime account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-3y-Lf2">
+                    <rect key="frame" x="62.5" y="166" width="250" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="5mc-7Y-zOk"/>
+                        <constraint firstAttribute="height" constant="80" id="poh-0i-ftZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwM-M9-oXz">
+                    <rect key="frame" x="149.5" y="325.5" width="75" height="36"/>
+                    <color key="backgroundColor" red="0.83921568629999999" green="0.81568627449999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="e5T-LH-wNe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Log In">
+                        <color key="titleColor" red="0.26840576529999999" green="0.27288585900000001" blue="0.30752104520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="logIn:" destination="-1" eventType="touchUpInside" id="Nom-sC-hxb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OwM-M9-oXz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Fd6-m9-cwV"/>
+                <constraint firstItem="QLg-lz-PXm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HwI-Ji-dE4"/>
+                <constraint firstItem="OwM-M9-oXz" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="JAr-2I-JTh"/>
+                <constraint firstItem="JAd-3y-Lf2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="YCN-ah-vbs"/>
+                <constraint firstItem="JAd-3y-Lf2" firstAttribute="top" secondItem="QLg-lz-PXm" secondAttribute="bottom" constant="71" id="c3E-fO-hME"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QLg-lz-PXm" secondAttribute="trailing" id="qJe-yc-1v5"/>
+                <constraint firstItem="QLg-lz-PXm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yDw-Rk-moe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
